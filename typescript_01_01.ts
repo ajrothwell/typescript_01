@@ -1,11 +1,13 @@
 function sum({x, y} : {x: number, y: number}) : number {
   return x + y
 }
-console.log(sum({x:2, y:2}))
+console.log(sum({x:3, y:2}))
+
 function log(value: any) {
-  console.log(value)
+  console.log('log value:', value)
 }
-// log(6)
+log(6)
+
 function greet(name? : string) {
   if (name) {
       console.log(`Hello ${name}`)
@@ -13,8 +15,8 @@ function greet(name? : string) {
       console.log('Hello Stranger')
   }
 }
-// greet('Bob')
-// greet()
+greet('Bob')
+greet()
 
 let booleanOrString : string | boolean = 'I could change'
 booleanOrString = true

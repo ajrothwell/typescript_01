@@ -17,11 +17,11 @@ function sum(_a) {
     var x = _a.x, y = _a.y;
     return x + y;
 }
-console.log(sum({ x: 2, y: 2 }));
+console.log(sum({ x: 3, y: 2 }));
 function log(value) {
-    console.log(value);
+    console.log('log value:', value);
 }
-// log(6)
+log(6);
 function greet(name) {
     if (name) {
         console.log("Hello ".concat(name));
@@ -30,8 +30,8 @@ function greet(name) {
         console.log('Hello Stranger');
     }
 }
-// greet('Bob')
-// greet()
+greet('Bob');
+greet();
 var booleanOrString = 'I could change';
 booleanOrString = true;
 function printId(id) {
